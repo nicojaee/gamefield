@@ -13,10 +13,16 @@
 <!-- Login Form Section -->
 <div class="max-w-md mx-auto px-6 py-16">
     <div class="bg-gray-900 rounded-lg p-8 border border-red-600">
-        <h2 class="text-3xl font-bold mb-8 text-red-500 text-center">Login</h2>
+        <h2 class="text-3xl font-bold mb-8 text-red-500 text-center">Register</h2>
         
-        <form class="space-y-6" action="/post-login" method="post">
+        <form class="space-y-6" action="/post-register" method="post">
             @csrf
+            <!-- Name -->
+            <div>
+                <label class="block text-gray-300 font-semibold mb-2">Name</label>
+                <input type="text" class="w-full bg-black border border-gray-600 rounded px-4 py-3 text-white focus:border-red-500 focus:outline-none" placeholder="your@email.com" required>
+            </div>
+
             <!-- Email -->
             <div>
                 <label class="block text-gray-300 font-semibold mb-2">Email Address</label>
@@ -37,7 +43,7 @@
 
             <!-- Login Button -->
             <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded transition duration-200">
-                Sign In
+                Sign Up
             </button>
 
             <!-- Forgot Password -->
