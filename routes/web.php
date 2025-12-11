@@ -27,6 +27,6 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::post('/post-login', [AuthController::class, 'login']);
-Route::post('/post-register', [AuthController::class, 'register']);
-Route::post('/logout', [AuthController::class, 'logout']);
+Route::post('/post-login', [AuthController::class, 'login'])->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);;
+Route::post('/post-register', [AuthController::class, 'register'])->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);;
+Route::post('/logout', [AuthController::class, 'logout'])->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);;
