@@ -20,7 +20,7 @@
             <!-- Name -->
             <div>
                 <label class="block text-gray-300 font-semibold mb-2">Name</label>
-                <input name="name" type="text" class="w-full bg-black border border-gray-600 rounded px-4 py-3 text-white focus:border-red-500 focus:outline-none" placeholder="John Doe" required>
+                <input name="name" type="text" class="w-full bg-black border border-gray-600 rounded px-4 py-3 text-white focus:border-red-500 focus:outline-none" placeholder="Name" required>
             </div>
 
             <!-- Email -->
