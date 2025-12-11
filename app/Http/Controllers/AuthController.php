@@ -22,7 +22,7 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
-        return redirect('/');
+        return redirect('/login');
     }
 
     public function login(Request $request){
