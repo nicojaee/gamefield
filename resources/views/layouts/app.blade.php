@@ -18,8 +18,15 @@
                 <li><a href="/about" class="hover:text-red-500">About</a></li>
                 <li><a href="/booking" class="hover:text-red-500">Booking</a></li>
                 <li><a href="/contact" class="hover:text-red-500">Contact</a></li>
-                <li><a href="/login" class="hover:text-red-500">Login</a></li>
-                <li><a href="/logout" class="hover:text-red-500">Logout</a></li>
+                @if(auth()->user())
+                    <form action="/logout" method="post">
+                        @csrf
+                        <button type="submit" class="hover:text-red-500">Logout</button>
+                    </form>    
+                @else
+                    <li><a href="/login" class="hover:text-red-500">Login</a></li>
+                    <li><a href="/register" class="hover:text-red-500">Register</a></li>
+                @endif
             </ul>
         </nav>
     </header>
