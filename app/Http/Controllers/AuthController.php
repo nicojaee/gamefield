@@ -23,14 +23,14 @@ class AuthController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
-        return redirect()->route('home');
+        return redirect('/');
     }
 
     public function login(Request $request){
         if(Auth::attempt($request->only('email', 'password'))){
             return redirect()->intended(route('home'));
         }
-        return back()->withErrors([
+        return redirect('/login')->withErrors([
             'message' => 'Invalid Credentials'
         ]);
     }
