@@ -20,13 +20,13 @@
             <!-- Email -->
             <div>
                 <label class="block text-gray-300 font-semibold mb-2">Email Address</label>
-                <input type="email" class="w-full bg-black border border-gray-600 rounded px-4 py-3 text-white focus:border-red-500 focus:outline-none" placeholder="your@email.com" required>
+                <input name="email" type="email" class="w-full bg-black border border-gray-600 rounded px-4 py-3 text-white focus:border-red-500 focus:outline-none" placeholder="your@email.com" required>
             </div>
 
             <!-- Password -->
             <div>
                 <label class="block text-gray-300 font-semibold mb-2">Password</label>
-                <input type="password" class="w-full bg-black border border-gray-600 rounded px-4 py-3 text-white focus:border-red-500 focus:outline-none" placeholder="••••••••" required>
+                <input name="password" type="password" class="w-full bg-black border border-gray-600 rounded px-4 py-3 text-white focus:border-red-500 focus:outline-none" placeholder="••••••••" required>
             </div>
 
             <!-- Remember Me -->
